@@ -11,7 +11,7 @@ You have installed the latest version of [Django(python)]
 You have a Linux machine. For only user priviledges the application is able to work properly on any operating system ].
 You have read the projects REAME.md Documentation.
 
-# Installing <Photo_Bing>
+# Installing Photo_Bing
 To install <Photo_bing>, follow these steps:
 
 Linux and macOS:
@@ -20,7 +20,7 @@ Linux and macOS:
 
 <Optional_Commands>
 
-# Contributing to <Photo-Bing>
+# Contributing to Photo-Bing
 
 To contribute to <photo-bingb>, follow these steps:
 
