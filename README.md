@@ -2,7 +2,7 @@
 
 Photo Bing is a application that allows the user to host or post their own photos on the web.
 
-Photo bing is a projects app that has aided me to publish my pictures on the web.    In the app you are able to interact with different photos posted at different times. Moreover as a user you are able to view each photo's details. The user is also able to post and remove a photo.
+Photo bing is a projects app that has aided me to publish my pictures on the web.In the app you are able to interact with different photos posted at different times. Moreover as a user you are able to view each photo's details. The user is also able to post and remove a photo.
 
 # Prerequisites
 Before you begin, ensure you have met the following requirements:
@@ -18,7 +18,7 @@ Linux and macOS:
 
 <install_command>
 
-<Optional_Commands>
+Optional_Commands
 
 # Contributing to Photo-Bing
 
