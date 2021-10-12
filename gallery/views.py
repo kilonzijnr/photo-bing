@@ -23,4 +23,8 @@ def search_images(request):
         message = "Error!You have not entered an input"
         return render(request, 'search.html', {'message': message})
 
+def view_category(request, category):
+    categories = Image.objects.distinct().values_list('category__name', flat=True)
+    image = Image.objects.filter(category__name=category)
+    return render(request, 'category.html', {"image": image, 'categories': categories})
 

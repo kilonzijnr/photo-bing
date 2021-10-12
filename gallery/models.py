@@ -1,4 +1,3 @@
-from os import name
 from django.db import models
 
 # Create your models here.
@@ -29,7 +28,7 @@ class Category(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='photos/', default=None)
+    image = models.ImageField(upload_to = 'photos/', default = None)
     name = models.CharField(max_length= 30)
     description = models.TextField()
     location = models.ForeignKey(
