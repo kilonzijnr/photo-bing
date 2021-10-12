@@ -6,11 +6,13 @@ from django.http import Http404, HttpResponse
 # Create your views here.
 
 def photos(request):
+    categories = Image.objects.distinct().values_list('category__name', flat=True)
+    locations = Image.objects.distinct().values_list('location__name', flat=True)
     try:
         images = Image.objects.all()
     except ObjectDoesNotExist:
         raise Http404()
-    return render(request, 'photos.html', {'image':images})
+    return render(request, 'photos.html', {'image':images, 'categories': categories, 'locations': locations})
 
 def search_images(request):
     if 'image' in request.GET and request.GET['image']:
@@ -28,3 +30,8 @@ def view_category(request, category):
     image = Image.objects.filter(category__name=category)
     return render(request, 'category.html', {"image": image, 'categories': categories})
 
+def view_location(request, location):
+    locations = Image.objects.distinct().values_list('location__name', flat=True)
+    categories = Image.objects.distinct().values_list('category__name', flat=True)
+    image = Image.objects.filter(location__name=location)
+    return render(request, 'category.html', {"image": image, "locations": locations, 'categories': categories})
