@@ -1,0 +1,34 @@
+{% load django_bootstrap5 %} {% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    {% if title %}
+    <title>PHOTO BING</title>
+    {% else %}
+    <title>PHOTO BING</title>
+    {% endif %} {% block styles %} {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container-fluid" style="background: linear-gradient(to top, #e0eafc, #cfdef3);">
+        {% include 'navbar.html' %} {% block content %} {% endblock %}
+        {% block scripts %}
+        <script src="../../static/js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+            integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+            integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+            async></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+            integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+            async></script>
+        {% bootstrap_javascript %} {% endblock %}
+    </div>
+</body>
+
+</html>
