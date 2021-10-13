@@ -11,16 +11,22 @@ You have installed the latest version of [Django(python)]
 You have a Linux machine. For only user priviledges the application is able to work properly on any operating system ].
 You have read the projects REAME.md Documentation.
 
-# Installing Photo_Bing
-To install <Photo_bing>, follow these steps:
+# Installation Requirements
 
-Linux and macOS:
 
-<install_command>
+To install Photo_bing, follow these steps:
+python3.8
+pipenv
+Git and Github
+Gunicorn
 
-Optional_Commands
+# Installing Photo Bing
+- Install the dependancies above
+- Setup your Database and add it to the settings 
+- Run the application locally ($ python manage.py runserver
 
 # Contributing to Photo-Bing
+- You can email me the suggestion or ;
 
 To contribute to <photo-bingb>, follow these steps:
 
