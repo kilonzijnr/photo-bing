@@ -12,13 +12,10 @@ You have a Linux machine. For only user priviledges the application is able to w
 You have read the projects REAME.md Documentation.
 
 # Installation Requirements
-
-
-To install Photo_bing, follow these steps:
-python3.8
-pipenv
-Git and Github
-Gunicorn
+- python3.8
+- pipenv
+- Git and Github
+- Gunicorn
 
 # Installing Photo Bing
 - Install the dependancies above
